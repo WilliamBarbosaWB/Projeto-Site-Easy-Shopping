@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    margin: 15px 0;
+    width: 540px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background:#6d70bb;  
+    filter: drop-shadow(0px 10px 24px rgba(148, 153, 234, 0.10));
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    line-height: normal;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+a {
+    font-size: 28px;
+    line-height: normal;
+    color:#5D5D7D;
+    text-decoration: none;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+a:nth-child(2){
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+
+header {
+    margin: 24px 0 0 57px;
+}
+
+.conteiner {
+    height: 100vh;
+    width: 100vw;
+}
+
+.conteiner-left {
+    display: inline-block;
+    width: 60%; /* Ocupará apenas 60% da página.*/
+    padding-left: 136px;
+    margin-top: 20%;
+}
+
+.conteiner-rigth {
+    display: inline-block;
+    background: rgb(93, 93, 125,0.16); /*forma de colocar opacidade no backgroun sem afetar o elemento da frente. Afetará apenas o background.*/
+    height: 100vh;
+    width: 40%;
+    position: absolute; /*Posiciona o elemento onde nós queremos na página.*/
+}
+
+img {
+    position: relative;
+    top: 20%;
+    right: 130px;
+}
+
+@media screen and (max-width: 800px) {
+    /*ajustando a seção do lado direito para se adpatar na versão mobile*/
+    .conteiner-left {
+        width:100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .conteiner-right {
+        display: block;
+        height: 50%;
+        width: 100%;
+        position: static;
+
+    }
+
+    img {
+        position: absolute;
+        max-width: 90%;
+        padding: 40px;
+    }
+
+    header {
+        display: none; /*Sumir com o menu .*/
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+    }
+
+    p {
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size:14px;
+        line-height: 24px;
+    }
+
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
